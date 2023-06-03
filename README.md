@@ -1,6 +1,12 @@
 # quickPickFromList
 This extension generates a QuickPick. The options are provided in a file. It returns the selection for further use.
 
+- [quickPickFromList](#quickpickfromlist)
+	- [Usage](#usage)
+	- [`myFile` Details](#myfile-details)
+	- [Install and adaption of the extension](#install-and-adaption-of-the-extension)
+	- [Links](#links)
+
 
 
 ## Usage
