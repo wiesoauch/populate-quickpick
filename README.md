@@ -2,6 +2,7 @@
 This extension generates a QuickPick. The options are provided in a file. It returns the selection for further use.
 
 
+
 ## Usage
 The use case is the dynamical generation of a QuickPick in custom VSC [tasks](https://code.visualstudio.com/docs/editor/tasks). 
 
@@ -42,8 +43,17 @@ This allows to easily pass an argument from within VSC to a python script.
     ]
 ```
 
-## `myFile` Format
-Every line is listed as one option in the QuickPick window. The file is split with the `\n` character.
+
+
+## `myFile` Details
+
+- path to file
+  - must be created as such `<workspacePath>/scripts/temp/available_headers.txt`
+  - the extension adapts automatically to the workspace you are in
+
+- format
+  - every line is listed as one option in the QuickPick window
+  - the file is split with the `\n` character
 
 ```
 option 1
@@ -51,9 +61,23 @@ option 2
 ... 
 ```
 
+
+
 ## Install and adaption of the extension
-- install `.vsix` via `code --install-extension <path to vsix>` from file
-- extension can be adapted and packaged with `vsce`, no need to publish it ([more infos](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions)).
+- install extension from `.vsix` 
+  - via `code --install-extension <path to vsix>` from file
+  - to list all existing extensions `code --list-extensions`
+- uninstall older version 
+  - via `code --uninstall-extension undefined_publisher.populate-quickpick`
+  - additionally remove locally `rm -r undefined_publisher.populate-quickpick-0.0.1/` in `/Users/.../.vscode/extensions`
+- extension can be adapted and packaged with `vsce`, no need to publish it ([more infos on packaging](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions))
+  - in `/Users/.../populate-quickpick`
+  - call `vsce package`
+- test extension
+  - without the need to install it via an Extension Development Host window with `F5`
+  - there, call extension from the `Command Palette (shift-cmd-P)` via command `QuickPick from a List`
+- the extension was created via `Yeoman` for vsc ([more infos on building extensions](https://code.visualstudio.com/api/get-started/your-first-extension)).
+
 
 
 ## Links
