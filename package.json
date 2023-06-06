@@ -1,7 +1,7 @@
 {
   "name": "populate-quickpick",
   "displayName": "populate-quickPick",
-  "description": "populate a QuickPick from a list",
+  "description": "populate a QuickPick from a file",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.54.0"
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "populate-quickpick.quickPickFromList",
-        "title": "quickPick from a List"
+        "command": "populate-quickpick.quickPickFromFile",
+        "title": "quickPick from a File"
       }
     ]
   },

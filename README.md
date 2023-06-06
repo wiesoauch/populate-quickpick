@@ -1,10 +1,11 @@
-# quickPickFromList
+# quickPickFromFile
 This extension generates a QuickPick. The options are provided in a file. It returns the selection for further use.
 
-- [quickPickFromList](#quickpickfromlist)
+- [quickPickFromFile](#quickpickfromfile)
 	- [Usage](#usage)
 	- [`myFile` Details](#myfile-details)
 	- [Install and adaption of the extension](#install-and-adaption-of-the-extension)
+	- [Future Ideas](#future-ideas)
 	- [Links](#links)
 
 
@@ -31,7 +32,7 @@ For example:
 			{
 				"id": "pickDemo",
 				"type": "command",
-				"command": "populate-quickpick.quickPickFromList"
+				"command": "populate-quickpick.quickPickFromFile"
 			}
 		]
 ```
@@ -81,9 +82,14 @@ option 2
   - call `vsce package`
 - test extension
   - without the need to install it via an Extension Development Host window with `F5`
-  - there, call extension from the `Command Palette (shift-cmd-P)` via command `QuickPick from a List`
+  - there, call extension from the `Command Palette (shift-cmd-P)` via command `QuickPick from a File`
 - the extension was created via `Yeoman` for vsc ([more infos on building extensions](https://code.visualstudio.com/api/get-started/your-first-extension)).
 
+## Future Ideas
+- add file path as option in user settings
+- make extension run not only for workspaces but also without a workspace
+- allow a hierarchy of topics
+- make nested QuickPicks available for different hierarchy topics like shown in the [QuickInput examples](https://github.com/microsoft/vscode-extension-samples/tree/main/quickinput-sample)
 
 
 ## Links
