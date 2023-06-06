@@ -5,7 +5,7 @@ This extension generates a QuickPick. The options are provided in a file. It ret
 ## Usage
 Dynamically creates options for a QuickPick in custom VSC [tasks](https://code.visualstudio.com/docs/editor/tasks). 
 
-
+If you call the task `My Task`, a QuickPick window will appear. It lists the options provided in `myFile`. The selected option is then echoed.
 
 ![](images/quickpick_sample_usage.gif)
 
@@ -35,7 +35,7 @@ For example in your `sample.code-workspace`:
 	]
 ```
 
-If you call the task `My Task`, a QuickPick window will appear. It lists the options provided in `myFile`. The selected option is then echoed.
+
 
 This allows to easily pass an argument from within VSC to a python script and much more.
 
