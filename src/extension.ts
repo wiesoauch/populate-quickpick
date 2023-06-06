@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage('No workspace is currently open');
         }
 
-        vscode.window.showInformationMessage("QuickPick from: " + myFile);
+        // vscode.window.showInformationMessage("QuickPick from: " + myFile);
 
         const content = fs.readFileSync(myFile);
         const myArray = content.toString().split("\n");

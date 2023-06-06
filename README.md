@@ -68,7 +68,7 @@ option 2
 
 
 
-## Todo
+## TODO
 - [ ] add file path as option in user settings
 - [ ] ensure cross-platform compatibility for line split
 - [ ] make extension run not only for workspaces but also without a workspace
