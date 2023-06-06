@@ -35,7 +35,7 @@ For example in your `sample.code-workspace`:
 		]
 ```
 
-If you call the task `My Task`, a QuickPick window will. It lists the options provided in `myFile`. The selected option is then echoed.
+If you call the task `My Task`, a QuickPick window will appear. It lists the options provided in `myFile`. The selected option is then echoed.
 
 This allows to easily pass an argument from within VSC to a python script and much more.
 
