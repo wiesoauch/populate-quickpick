@@ -13,26 +13,26 @@ Dynamically creates options for a QuickPick in custom VSC [tasks](https://code.v
 
 For example in your `sample.code-workspace`:
 ```json
-	"tasks": {
-		"version": "2.0.0",
-		"tasks": [
-			{
-				"label": "My Task",
-				"type": "shell",
-				"command": "echo", // your command here
-				"args": [
-					"${input:pickDemo}"
-				],
-				"problemMatcher": []
-			}
-		],
-		"inputs": [
-			{
-				"id": "pickDemo",
-				"type": "command",
-				"command": "populate-quickpick.quickPickFromFile"
-			}
-		]
+"tasks": {
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "My Task",
+			"type": "shell",
+			"command": "echo", // your command here
+			"args": [
+				"${input:pickDemo}"
+			],
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "pickDemo",
+			"type": "command",
+			"command": "populate-quickpick.quickPickFromFile"
+		}
+	]
 ```
 
 If you call the task `My Task`, a QuickPick window will appear. It lists the options provided in `myFile`. The selected option is then echoed.
