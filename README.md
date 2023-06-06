@@ -7,7 +7,7 @@ Dynamically creates options for a QuickPick in custom VSC [tasks](https://code.v
 
 
 
-![](quickpick_sample_usage.gif)
+![](images/quickpick_sample_usage.gif)
 
 
 
