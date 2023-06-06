@@ -1,6 +1,11 @@
 {
   "name": "populate-quickpick",
   "displayName": "populate-quickPick",
+  "publisher": "wiesoauch",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiesoauch/populate-quickpick"
+  },
   "description": "populate a QuickPick from a file",
   "version": "0.0.1",
   "engines": {
